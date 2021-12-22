@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARVEL</title>
+    <link rel="stylesheet" href="CSS.css">
+    <link rel="stylesheet" href="mobilecss.css">
+    <link rel="stylesheet" href="mobilecss2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marvel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+    <style>
+        body {
+            min-width: 290px;
+            /* min-height: 640px; */
+            /* min-height: 1080px; */
+            /* display: flex; */
+            /* flex-direction: column; */
+            color: rgb(255, 255, 255);
+            background-size: cover;
+            background: rgb(26, 25, 25);
+            font-family: var(--flora);
+            /* height: 1440px; */
+            cursor: url("thor.cur"), default;
+
+        }
+
+        :root {
+            --marvelred: #ED1D24;
+            --fdaughter: 'Architects Daughter', cursive;
+            --fstyle: 'RocknRoll One', sans-serif;
+            --flora: 'Lora', serif;
+            --fbutton: 'Bebas Neue', cursive;
+        }
+
+        /* NAVIGATION BAR */
+        /* #navbar::before{
+    content: "";
+    position: absolute;
+    
+} */
+        #navleft img {
+            height: 55px;
+            width: 100px;
+        }
+
+        #navbar {
+            font-family: var(--fdaughter);
+            position: sticky;
+            border-style: double;
+            border-radius: 25px;
+            background-color: var(--marvelred);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            top: 5px;
+            box-shadow: -2px 2px 25px 10px var(--marvelred);
+
+        }
+
+        #navbar ul {
+            margin-top: 0px;
+        }
+
+        #navbar li {
+            float: left;
+            list-style: none;
+            padding: 10px;
+        }
+
+        #navbar li a {
+            font-size: larger;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+
+        #navbar li a:hover {
+            color: var(--marvelred);
+        }
+
+        #navbar li:hover {
+            background-color: black;
+            border-radius: 10px;
+
+        }
+
+        #navleft {
+            width: 150px;
+            height: 50px;
+            margin-left: 2%;
+        }
+
+        #navmid {
+            width: 400px;
+
+        }
+
+        #navright {
+            width: 250px;
+
+        }
+
+        #navright input {
+            font-family: 'Architects Daughter', cursive;
+            padding: 5px;
+            border-radius: 10px;
+            border: none;
+            background-color: black;
+            color: blanchedalmond;
+        }
+
+        #navright button {
+            font-family: 'Architects Daughter', cursive;
+            padding: 6px;
+            border-radius: 9px;
+            border: none;
+            background-color: black;
+            color: blanchedalmond;
+        }
+
+        #navright button:hover {
+            background-color: black(226, 9, 9, 0.863);
+            color: white;
+        }
+
+        /* #################################### */
+
+        /* WELCOME */
+        /* #welcomeh::before{
+    content: "";
+    background-image: url("AVENGERS.jpg");
+    background-size: cover;
+    position: absolute;
+    top:70px;
+    left:0;
+    height: 80%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.5;
+
+} */
+        #welcomeh {
+            background-image: url("AVENGERS.jpg");
+            background-size: cover;
+            height: 400px;
+            width: 100%;
+            /* border: 2px solid cyan; */
+            text-align: center;
+        }
+
+        #welcomeh h1:hover {
+            color: var(--marvelred);
+            text-shadow: 5px 2px 2px black;
+        }
+
+        #welcomeh h1 {
+            transition: color 2s ease-in-out;
+            text-shadow: 5px 2px 2px var(--marvelred);
+            /* max-height: 200px; */
+            /* color: var(--marvelred); */
+            text-shadow: 5px 2px 2px var(--marvelred);
+            /* margin-top: 200px; */
+            text-decoration: underline;
+            font-size: 75px;
+            font-weight: bold;
+        }
+
+        #welcomeh p {
+            /* color: var(--marvelred); */
+            transition: color 2s ease-in-out;
+            font-weight: bold;
+            text-shadow: 5px 2px 2px var(--marvelred);
+            font-size: 25px;
+        }
+
+        #welcomeh p:hover {
+            color: var(--marvelred);
+            text-shadow: 5px 2px 2px black;
+        }
+
+        /* ############################## */
+        /* NEWS */
+        #news {
+            font-family: var(--fstyle);
+            /* border: 2px solid green; */
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            flex-flow: row wrap;
+        }
+
+        .newss {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .newss a img {
+            width: 285px;
+            height: 200px;
+        }
+
+        .newss p {
+            /* display: inline-block; */
+            width: 285px;
+            text-align: center;
+            font-family: 'Marvel', sans-serif;
+        }
+
+        #newsh {
+            color: var(--marvelred);
+            text-shadow: 5px 2px 10px black;
+            border: 1px solid var(--marvelred);
+            display: block;
+            text-align: center;
+            font-size: 50px;
+            margin-bottom: 10px;
+            margin-top: 110px;
+            transition: background-color 1s ease-in-out;
+        }
+
+        /* ################################ */
+
+        /* UPCOMING */
+
+        #upcomingg {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-flow: row wrap;
+        }
+
+        .upcoming a img {
+            padding: 10px;
+            width: 120px;
+            height: 150px;
+        }
+
+        .upcoming p {
+            padding: 10px;
+            /* display: inline-block; */
+            width: 120px;
+            text-align: center;
+            font-size: 15px;
+            font-family: 'Marvel', sans-serif;
+        }
+
+        #upcomingh {
+            color: var(--marvelred);
+            text-shadow: 5px 2px 10px black;
+            border: 1px solid var(--marvelred);
+            margin-top: 50px;
+            display: block;
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 10px;
+            padding: 10px;
+            transition: background-color 1s ease-in-out;
+        }
+
+        /* ############################ */
+
+        /* MOVIES */
+        #movieslist {
+            font-family: var(--fstyle);
+        }
+
+        #movieslist li {
+            border: 3px solid rgb(26, 25, 25);
+        }
+
+        #combo {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #moviesh {
+            transition: background-color 1s ease-in-out;
+            border: 1px solid var(--marvelred);
+            text-align: center;
+            font-size: 35px;
+            color: var(--marvelred);
+            text-shadow: 5px 2px 10px black;
+        }
+
+        #moviess {
+            display: flex;
+            flex-direction: row;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            width: 800px;
+            margin: 0px;
+            /* border:1px solid var(--marvelred); */
+        }
+
+        .movies p {
+            width: 120px;
+            text-align: center;
+        }
+
+        .movies p:hover {
+            color: cyan;
+            font-weight: bold;
+            /* font-family: var(--fstyle); */
+        }
+
+        .movies {
+            padding: 10px;
+        }
+
+        .movies a img {
+            height: 180px;
+            width: 120px
+        }
+
+        /* .movies::after {
+    content: "";
+    flex: auto;
+  } */
+        ol {
+            margin-right: 55px;
+            ;
+        }
+
+        ol li {
+            padding: 5px;
+        }
+
+        .empty {
+            width: 120px;
+        }
+
+        /* ######################## */
+
+        /* GAME POSTER */
+        #gameposter a {
+            color: white;
+            font-size: 17px;
+            text-decoration: none;
+            font-family: var(--fbutton);
+        }
+
+        #gameposter {
+            height: 550px;
+            width: 100%;
+            /* content: ""; */
+            background-image: url(GOGG.jpg);
+            /* opacity:0.5; */
+            /* position: absolute; */
+            /* width: 100%; */
+            /* height: 45%; */
+            background-size: contain;
+            background-repeat: no-repeat;
+            /* z-index: -1; */
+        }
+
+        #gameposter button:hover {
+            background-color: var(--marvelred);
+        }
+
+        #gameposter button {
+            /* position: fixed; */
+            border: none;
+            margin-left: 10px;
+            border-radius: 10px;
+            height: 40px;
+            width: 100px;
+            margin-top: 50px;
+            background-color: rgb(245, 63, 94);
+        }
+
+        #gameposter img {
+            width: 100%;
+        }
+
+        /* ######################## */
+
+        /* FOOTER IMAGE */
+
+        #footerimg {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: centre;
+            flex-direction: row;
+            background-image: url("MARVELF.jpg");
+            background-size: cover;
+        }
+
+        #footerimg li {
+            list-style: none;
+        }
+
+        /* #footerimg::before{
+    margin-top: 20px;
+    content: "";
+    background-image: url("MARVELF.jpg");
+    background-size: cover;
+    position: absolute;
+    height: 60%;
+    width:100%;
+    margin-bottom: 100px;
+    z-index: -1;
+} */
+        #l1 {
+            margin: 25px;
+        }
+
+        #l2 {
+            margin-right: 50px;
+        }
+
+        /* ################# */
+
+        /* FOOTER FINAL */
+
+        #footer {
+            font-family: var(--fbutton);
+            font-size: 20px;
+            /* border: 2px solid cyan; */
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row;
+            height: 75px;
+            justify-content: space-between;
+        }
+
+        #footerimg li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+
+        }
+
+        #footerimg li a:hover {
+            border-radius: 5px;
+            background-color: var(--marvelred);
+        }
+
+        #footerlist {
+            display: flex;
+            flex-direction: row;
+            float: right;
+            align-items: right;
+        }
+
+        #footerlist li {
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+            padding-right: 10px;
+        }
+
+        #footerlist li img {
+            display: block;
+            height: 25px;
+            margin: 0px;
+            width: 25px;
+            padding: 0px;
+        }
+
+        /* ########################## */
+
+        /* HOVERING ALL HEADINGS */
+
+        #upcomingh:hover {
+            background-color: var(--marvelred);
+            text-shadow: 10px 4px 20px white;
+            color: red;
+        }
+
+        #newsh:hover {
+            background-color: var(--marvelred);
+            text-shadow: 10px 4px 20px white;
+            color: red;
+        }
+
+        #moviesh:hover {
+            background-color: var(--marvelred);
+            text-shadow: 10px 4px 20px white;
+            color: red;
+        }
+
+        .movies img {
+            border: 3px solid rgb(26, 25, 25);
+        }
+
+        .movies img:hover {
+            border: 3px solid rgb(10, 43, 228);
+        }
+
+        #movieslist li:hover {
+            border: 3px solid var(--marvelred);
+            border-radius: 15px;
+            transform: scale(1.1)
+        }
+
+        .loading {
+            border-radius: 10px;
+            /* box-shadow: -5px 5px 10px var(--marvelred); */
+            display: inline;
+            float: left;
+            width: 50%;
+            height: 10px;
+            background-color: var(--marvelred);
+            margin-bottom: 8px;
+            animation-name: loading;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        .loading2 {
+            border-radius: 10px;
+            /* box-shadow: -5px 5px 10px var(--marvelred); */
+            display: inline;
+            float: right;
+            width: 50%;
+            height: 10px;
+            background-color: var(--marvelred);
+            margin-bottom: 8px;
+            animation-name: loading2;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes loading {
+            0% {
+                width: 50%;
+            }
+
+            50% {
+                border-radius: 20%;
+                width: 0%;
+            }
+
+            100% {
+                width: 50%;
+            }
+        }
+
+        @keyframes loading2 {
+            0% {
+                width: 50%;
+            }
+
+            50% {
+                border-radius: 20%;
+                width: 0%;
+            }
+
+            100% {
+                width: 50%;
+            }
+        }
+    </style>
+
+<body>
+    <nav id="navbar">
+        <div id="navleft">
+            <a href="https://www.marvel.com"><img src="logo.png" alt="logo"></a>
+        </div>
+        <div id="navmid">
+            <ul>
+                <li><a href="#navbar">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#seasons">Seasons</a></li>
+        </div>
+        <div id="navright">
+            <input type="text" name="search" id="search" placeholder="Type Text"></input>
+            <button>Search</button>
+        </div>
+        </ul>
+    </nav>
+    <div id="welcomeh">
+        <h1>
+            Welcome
+        </h1>
+        <p>
+            Home of Marvel Cinematic Universe
+        </p>
+    </div>
+    <welcome>
+        <!-- <img src="AVENGERS.jpg" alt="ErrorLoading"></a> -->
+    </welcome>
+    <h2 id="newsh">Latest News</h2>
+    <news id="news">
+        <div class="newss" id="newss1">
+            <a href="https://www.imdb.com/title/tt9032400/"><img src="eternalsnews.jpeg" alt="ErrorLoading"></a>
+            <p>Marvel's Eternals releasing this November. People are excited. Get yours tickets NOW!</p>
+        </div>
+        <div class="newss">
+            <a href="https://www.imdb.com/title/tt10872600/"><img src="ottonews.png" alt="ErrorLoading"></a>
+            <p>Dr. Otto Octavios returning in Spiderman No way Home, Will we also see William Dafoe's Green Goblin?</p>
+        </div>
+        <div class="newss">
+            <a href="https://www.imdb.com/title/tt10872600/"><img src="spidernews.jpg" alt="ErrorLoading"></a>
+            <p>No Way Home teases Multiverse. Will we be seeing the trio of Spidermans together? Fans are superexcited
+            </p>
+        </div>
+        <div class="newss">
+            <a href="https://www.imdb.com/title/tt10648342/"><img src="thornews.jpg" alt="ErrorLoading"></a>
+            <p>Director Taiki Waititi teases Female Thor in Thor: love and Thunder. Is this the last MCU movie of Chris
+                Hemsworth?</p>
+        </div>
+        <div id="news5"></div>
+    </news>
+    <hr>
+    <div class="loading"></div>
+    <div class="loading2"></div>
+    <hr>
+    <h2 id="upcomingh">Upcoming Movies</h2>
+    <upcoming id="upcomingg">
+        <div class="upcoming" id="newss1">
+            <a href="https://www.imdb.com/title/tt9032400/"><img src="TE.jpeg" alt="ErrorLoading"></a>
+            <p>The Eternals <br> (2021)</p>
+        </div>
+        <div class="upcoming">
+            <a href="https://www.imdb.com/title/tt10872600/"><img src="SMNWH.jpg" alt="ErrorLoading"></a>
+            <p>Spiderman: No Way Home <br> (2021)</p>
+        </div>
+        <div class="upcoming">
+            <a href="https://www.imdb.com/title/tt10648342/"><img src="TLAT.jpg" alt="ErrorLoading"></a>
+            <p>Thor: Love and Thunder <br> (2022)</p>
+        </div>
+        <div class="upcoming">
+            <a href="https://www.imdb.com/title/tt9114286/"><img src="BPWF.jpg" alt="ErrorLoading"></a>
+            <p>Black Panther: Wakanda Forever <br> (2022)</p>
+        </div>
+        <div class="upcoming">
+            <a href="https://www.imdb.com/title/tt9419884/"><img src="DTIMOM.jpg" alt="ErrorLoading"></a>
+            <p>Doctor Strange: In the Madness of Multiverse <br> (2022)</p>
+        </div>
+        <div class="upcoming">
+            <a href="https://www.imdb.com/title/tt10676048/"><img src="TM.jpg" alt="ErrorLoading"></a>
+            <p>The Marvels <br> (2022)</p>
+        </div>
+    </upcoming>
+    <hr>
+    <div class="loading"></div>
+    <div class="loading2"></div>
+    <hr>
+    <br>
+    <div id="gameposter">
+        <button><a href="https://guardiansofthegalaxy.square-enix-games.com/en-us/buy/">Pre-Order Now</a></button>
+        <!-- <a href="https://guardiansofthegalaxy.square-enix-games.com/en-us/"><img src="GOGG.jpg" alt="ErrorLoading"></a> -->
+    </div>
+    <br>
+    <hr>
+    <div class="loading"></div>
+    <div class="loading2"></div>
+    <hr>
+    <h2 id="moviesh">
+        ALL MCU Movies
+    </h2>
+    <combo id="combo">
+        <movies id="moviess">
+            <div class="movies">
+                <a href="https://www.imdb.com/title/tt0371746/"><img src="IM1.jpg" alt="ErrorLoading"></a>
+                <p>Iron Man<br> (2008)</p>
+            </div>
+            <div class="movies">
+                <a href="https://www.imdb.com/title/tt1228705/"><img src="IM2.jpg" alt="ErrorLoading"></a>
+                <p>Iron Man 2<br> (2010)</p>
+            </div>
+            <div class="movies">
+                <a href="https://www.imdb.com/title/tt0371746/"><img src="T.jpg" alt="ErrorLoading"></a>
+                <p>Thor<br> (2011)</p>
+            </div>
+            <div class="movies">
+                <a href="https://www.imdb.com/title/tt0458339/"><img src="CAFA.jpeg" alt="ErrorLoading"></a>
+                <p>Captain America: The First Avenger<br> (2011)</p>
+            </div>
+            <div class="movies">
+                <a href="https://www.imdb.com/title/tt0848228/"><img src="TA.jpg" alt="ErrorLoading"></a>
+                <p>The Avengers<br> (2012)</p>
+            </div>
+            <div class="movies">
+                <a href="https://www.imdb.com/title/tt1300854/"><img src="IM3.jpg" alt="ErrorLoading"></a>
+                <p>Iron Man 3<br> (2013)</p>
+            </div>
+            <div class="movies">
+                <a href="https://www.imdb.com/title/tt1981115/"><img src="TDW.jpg" alt="ErrorLoading"></a>
+                <p>Thor: The Dark World<br> (2013)</p>
+            </div>
+            <div class="movies">
+                <a href="https://www.imdb.com/title/tt1843866/"><img src="CAWS.jpg" alt="ErrorLoading"></a>
+                <p>Captain America: Winter Soldier<br> (2014)</p>
+            </div>
+            <div class="movies">
+                <a href="https://www.imdb.com/title/tt2015381/"><img src="GOG1.jpg" alt="ErrorLoading"></a>
+                <p>Guardians Of Galaxy<br> (2014)</p>
+            </div>
+            <div class="movies">
+                <a href="https://www.imdb.com/title/tt2395427/"><img src="AAOU.jpg" alt="ErrorLoading"></a>
+                <p>Avengers Age of Ultron<br> (2015)</p>
+            </div>
+            <div class="movies">
+                <a href="https://www.imdb.com/title/tt0478970/"><img src="AM.jpg" alt="ErrorLoading"></a>
+                <p>Ant Man<br> (2008)</p>
+            </div>
+            <div class="movies">
+                <a href="https://www.imdb.com/title/tt3498820/"><img src="CACW.jpg" alt="ErrorLoading"></a>
+                <p>Captain America: Civil War<br> (2016)</p>
+            </div>
+            <div class="movies">
+                <a href="https://www.imdb.com/title/tt1211837/"><img src="DS.jpg" alt="ErrorLoading"></a>
+                <p>Doctor Strange<br> (2016)</p>
+            </div>
+            <div class="movies">
+                <a href="https://www.imdb.com/title/tt3896198/"><img src="GOG2.jpg" alt="ErrorLoading"></a>
+                <p>Guardians of Galaxy vol.2<br> (2017)</p>
+            </div>
+            <div class="movies">
+                <a href="https://www.imdb.com/title/tt2250912/"><img src="SPH.jpg" alt="ErrorLoading"></a>
+                <p>Spiderman Homecoming<br> (2017)</p>
+            </div>
+            <div class="movies">
+                <a href="https://www.imdb.com/title/tt0371746/"><img src="TR.jpg" alt="ErrorLoading"></a>
+                <p>Thor Ragnarok<br> (2017)</p>
+            </div>
+            <div class="movies">
+                <a href="https://www.imdb.com/title/tt1825683/"><img src="BP.jpg" alt="ErrorLoading"></a>
+                <p>Black Panther<br> (2018)</p>
+            </div>
+            <div class="movies">
+                <a href="https://www.imdb.com/title/tt4154756/"><img src="AIW.jpg" alt="ErrorLoading"></a>
+                <p>Avengers Infinity War<br> (2018)</p>
+            </div>
+            <div class="movies">
+                <a href="https://www.imdb.com/title/tt5095030/"><img src="AMAW.jpg" alt="ErrorLoading"></a>
+                <p>Antman and Wasp<br> (2018)</p>
+            </div>
+            <div class="movies">
+                <a href="https://www.imdb.com/title/tt4154664/"><img src="CM.jpg" alt="ErrorLoading"></a>
+                <p>Captain Marvel<br> (2019)</p>
+            </div>
+            <div class="movies">
+                <a href="https://www.imdb.com/title/tt4154796/"><img src="AE.jpg" alt="ErrorLoading"></a>
+                <p>Avengers Endgame<br> (2019)</p>
+            </div>
+            <div class="movies">
+                <a href="https://www.imdb.com/title/tt6320628/"><img src="SMFFH.jpg" alt="ErrorLoading"></a>
+                <p>Spiderman Far From Home<br> (2019)</p>
+            </div>
+            <div class="movies">
+                <a href="https://www.imdb.com/title/tt3480822/"><img src="BW.jpg" alt="ErrorLoading"></a>
+                <p>Black Widow<br> (2021)</p>
+            </div>
+            <div class="movies">
+                <a href="https://www.imdb.com/title/tt9140554/"><img src="loki.jpg" alt="ErrorLoading"></a>
+                <p>Loki TV Series<br> (2021-)</p>
+            </div>
+            <div class="movies">
+                <a href="https://www.imdb.com/title/tt9208876/"><img src="FAWS.jpg" alt="ErrorLoading"></a>
+                <p>Falcon and Winter Soldier TV Series<br> (2019)</p>
+            </div>
+            <div class="movies">
+                <a href="https://www.imdb.com/title/tt9208876/"><img src="WV.jpg" alt="ErrorLoading"></a>
+                <p>Wanda Vision TV Series<br> (2021-)</p>
+            </div>
+            <div class="empty" class="movies"></div>
+            <div class="empty" class="movies"></div>
+            <div class="empty" class="movies"></div>
+            <div class="empty" class="movies"></div>
+        </movies>
+        <ol id="movieslist" type="1">
+            <h4>Chronological Order</h4>
+            <li>Iron Man</li>
+            <li>Iron Man 2</li>
+            <li>Thor</li>
+            <li>Captain America: First Avenger</li>
+            <li>The Avengers</li>
+            <li>Iron Man 3</li>
+            <li>Thor: Dark World</li>
+            <li>Captain America: Winter Soldier</li>
+            <li>Guardians of Galaxy</li>
+            <li>Avenger Age Of Ultron</li>
+            <li>Ant Man</li>
+            <li>Captain America: Civil War</li>
+            <li>Doctor Strange</li>
+            <li>Guardians of Galaxy vol.2</li>
+            <li>Spiderman Homecoming</li>
+            <li>Thor: Ragnarok</li>
+            <li>Black Panther</li>
+            <li>Avengers Infinity War</li>
+            <li>Antman and Wasp</li>
+            <li>Captain Marvel</li>
+            <li>Avengers Endgame</li>
+            <li>Spiderman far From Home</li>
+        </ol>
+    </combo>
+    <hr>
+    <div class="loading"></div>
+    <div class="loading2"></div>
+    <hr>
+    <!-- <div id="spare"></div> #JUGAAR -->
+    <br>
+    <div id="footerimg">
+        <ul id="l1">
+            <li><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man">Iron Man<a /></li>
+            <li><a href="https://marvelcinematicuniverse.fandom.com/wiki/Thor">Thor</a></li>
+            <li><a href="https://marvel.fandom.com/wiki/Steven_Rogers_(Earth-616)">Captain America</a></li>
+            <li><a href="https://marvelcinematicuniverse.fandom.com/wiki/Black_Widow">Black Widow</a></li>
+            <li><a href="https://marvelcinematicuniverse.fandom.com/wiki/Hawkeye">Hawk Eye</a></li>
+            <li><a href="https://marvelcinematicuniverse.fandom.com/wiki/Loki">Loki</a></li>
+            <li><a href="https://marvelcinematicuniverse.fandom.com/wiki/Doctor_Strange">Doctor Strange</a></li>
+            <li><a href="https://marvelcinematicuniverse.fandom.com/wiki/Captain_Marvel">Captain Marvel</a></li>
+            <li><a href="https://marvelcinematicuniverse.fandom.com/wiki/Black_Panther">Black Panther</a></li>
+            <li><a href="https://marvel.fandom.com/wiki/Bruce_Banner_(Earth-616)">Hulk</a></li>
+            <li><a href="https://marvelcinematicuniverse.fandom.com/wiki/Nick_Fury">Nick Fury</a></li>
+            <li><a href="https://marvelcinematicuniverse.fandom.com/wiki/Winter_Soldier">Winter Soldier</a></li>
+        </ul>
+        <ul id="l2">
+            <li><a href="https://marvel.fandom.com/wiki/Samuel_Wilson_(Earth-616)">The Falcon</a></li>
+            <li><a href="https://marvel.fandom.com/wiki/Peter_Parker_(Earth-616)">Spiderman</a></li>
+            <li><a href="https://marvelcinematicuniverse.fandom.com/wiki/Star-Lord">Star Lord</a></li>
+            <li><a href="https://marvelcinematicuniverse.fandom.com/wiki/Rocket_Raccoon">Rocket</a></li>
+            <li><a href="https://marvel.fandom.com/wiki/Groot_(Earth-616)">Groot</a></li>
+            <li><a href="https://marvelcinematicuniverse.fandom.com/wiki/Gamora">Gamora</a></li>
+            <li><a href="https://marvelcinematicuniverse.fandom.com/wiki/Nebula">Nebula</a></li>
+            <li><a href="https://marvelcinematicuniverse.fandom.com/wiki/Mantis">Mantis</a></li>
+            <li><a href="https://marvelcinematicuniverse.fandom.com/wiki/Scarlet_Witch">Wanda Maximoff</a></li>
+            <li><a href="https://marvelcinematicuniverse.fandom.com/wiki/Vision">Vision</a></li>
+            <li><a href="https://marvelcinematicuniverse.fandom.com/wiki/Ant-Man">Antman</a></li>
+            <li><a href="https://marvelcinematicuniverse.fandom.com/wiki/Wasp">Wasp</a></li>
+        </ul>
+    </div>
+    <footer id="footer">
+        <p>CopyRight &copy; All Rights Reserved</p>
+        <ul id="footerlist">
+            <li>Follow us on </li>
+            <li><a href="https://www.facebook.com/marvelstudios/"><img src="TW.png" alt="ErrorLoading"></a>Twitter</li>
+            <li><a href="https://twitter.com/MarvelStudios?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img
+                        src="FB.png" alt="ErrorLoading"></a>Facebook</li>
+            <li><a href="https://www.youtube.com/c/marvel"><img src="YT.png" alt="ErrorLoading"></a>Youtube</li>
+        </ul>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+@media (max-width:750px){
+    #navmid li a{
+        display: inline;
+        font-size: 15px;
+    }
+    #navbar{
+        position: static;
+        flex-direction: column;
+    }
+    #navmid ul{
+        margin-left: 30px;
+    }
+    #navright{
+        margin-left: 20px;
+        padding-bottom: 10px;
+    }
+    #gameposter{
+        height: 300px;
+    }
+    #navright button{
+        /* font-size:10px; */
+    }
+    #gameposter button{
+    }
+}
